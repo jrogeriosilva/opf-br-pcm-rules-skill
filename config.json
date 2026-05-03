@@ -1,0 +1,12 @@
+{
+  "confluenceBaseUrl": "https://openfinancebrasil.atlassian.net",
+  "outputFile": "output/additional-info.json",
+  "version": "v1.07",
+  "interRequestDelayMs": 2000,
+  "retryDelaysMs": [2000, 4000, 8000, 16000],
+  "pages": [
+    { "pageId": "1621622796", "title": "Iniciação de Pagamentos" },
+    { "pageId": "1623162886", "title": "Iniciação de Pagamentos Sem Redirecionamento" },
+    { "pageId": "1622081540", "title": "Pagamentos Automáticos" }
+  ]
+}

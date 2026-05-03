@@ -1,0 +1,26 @@
+{
+  "name": "pcm-additional-info-scraper",
+  "version": "1.0.0",
+  "description": "Extrai tabelas de regras de obrigatoriedade do additionalInfo das páginas PCM do Confluence",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npx tsx src/index.ts",
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "list": "npx tsx src/tools/additionalInfoList.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "dotenv": "^17.4.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

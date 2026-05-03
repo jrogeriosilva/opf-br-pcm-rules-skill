@@ -1,0 +1,5 @@
+node_modules/
+dist/
+output/additional-info.json
+.env
+*.env
