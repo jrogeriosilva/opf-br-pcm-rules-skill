@@ -10,11 +10,10 @@ Em vez de despejar o JSON inteiro no contexto, a skill faz fetch sob demanda e d
 SKILL.md                              instruções carregadas pelo Claude
 scripts/ensure-fresh.mjs              garante JSON atualizado (npm install + extração)
 scripts/lookup.mjs                    filtra o JSON e imprime só o relevante
-extractor/                            extrator embarcado (TypeScript, autocontido)
+extractor/                            extrator embarcado (Node.js puro, autocontido)
   package.json
-  tsconfig.json
   config.json                         pageIds, baseUrl, retry policy
-  src/{index,fetcher,parser,types}.ts
+  src/{index,fetcher,parser}.mjs
   output/additional-info.json         gerado, gitignored
 ```
 
@@ -81,7 +80,6 @@ A raiz expõe scripts facade:
 ```bash
 npm run skill:install    # npm install dentro de extractor/
 npm run skill:start      # roda a extração (npm run start em extractor/)
-npm run skill:lint       # tsc --noEmit em extractor/
 npm run start            # ensure-fresh --force (atalho)
 ```
 
